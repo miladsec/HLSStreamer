@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HLS Video Player</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div style="max-width: 640px;">
+    <video id="videoPlayer" controls autoplay></video>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script>
+    const videoElement = document.getElementById('videoPlayer');
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      const url = 'https://localhost:44331/api/Video/file_example.m3u8'; // change the ip:port and file name.
+      hls.loadSource(url);
+      hls.attachMedia(videoElement);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        videoElement.play();
+      });
+    } else if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
+        videoElement.src = 'http://localhost:44331/api/Video/file_example.m3u8'; // change the ip:port and file name.
+      videoElement.addEventListener('loadedmetadata', () => {
+        videoElement.play();
+      });
+    }
+  </script>
+</body>
+</html>

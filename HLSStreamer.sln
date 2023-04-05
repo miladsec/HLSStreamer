@@ -5,6 +5,27 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLSStreamer", "HLSStreamer\HLSStreamer.csproj", "{9584F2C6-A35C-4D7C-880B-195A479E40D5}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HLSStreamerClient", "..\..\..\github\HLSStreamerClient\", "{8A81117A-2ED4-4846-BB77-A4652F304177}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_7009"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\github\HLSStreamerClient\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7009\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_7009"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\github\HLSStreamerClient\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7009\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "7009"
+		SlnRelativePath = "..\..\..\github\HLSStreamerClient\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +36,10 @@ Global
 		{9584F2C6-A35C-4D7C-880B-195A479E40D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9584F2C6-A35C-4D7C-880B-195A479E40D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9584F2C6-A35C-4D7C-880B-195A479E40D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A81117A-2ED4-4846-BB77-A4652F304177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A81117A-2ED4-4846-BB77-A4652F304177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A81117A-2ED4-4846-BB77-A4652F304177}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A81117A-2ED4-4846-BB77-A4652F304177}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
