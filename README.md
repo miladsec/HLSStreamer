@@ -15,9 +15,12 @@ Getting Started
 ---------------
 
 1.  Clone the repository: `git clone https://github.com/Miiilc/HLSStreamer.git`
-2.  Navigate to the project directory: `cd hls-server-csharp`
-3.  Build the project: `dotnet build`
-4.  Run the project: `dotnet run`
+2.  Open the project with Visual Studio
+3.  Run the project with IIS
+4.  Convert MP4 to m3u8 with `GET /api/Video` API
+5.  Check Client app that the IP:PORT is correct
+4.  Run streamer client app
+5.  You can see the video.
 
 The server will start running on `http://localhost:5000`.
 
