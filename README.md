@@ -3,6 +3,8 @@ HLS Server with C# and Js
 
 This project is a basic implementation of a server that provides HLS (HTTP Live Streaming) capabilities. It uses C# on the server side and HTML/JS on the client side. The server has 3 API routes: one for converting an MP4 file to an M3U8 playlist, one for returning the playlist, and one for returning the TS files.
 
+![How HLS works](http://www.streamingmedia.com/Images/ArticleImages/ArticleImage.11612.jpg)
+
 Requirements
 ------------
 
